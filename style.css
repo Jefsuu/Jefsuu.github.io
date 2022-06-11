@@ -108,7 +108,6 @@ p{
 
 .profile-photo{
     grid-area: a;
-    background-color: #330033;
     height: fit-content;
 
 }
@@ -124,9 +123,9 @@ p{
 .profile-personal-info{
     grid-area: c;
     height: fit-content;
-    background-color: green;
     overflow: hidden;
     max-width: fit-content;
+    margin-left: 0 auto;
     
 }
 
@@ -189,4 +188,24 @@ p{
     color: var(--white);
     background-color: var(--blue-gray-color);
     border-radius: 0.5rem;
+}
+
+.studies-section{
+    display: grid;
+    grid-template-areas: "a b c";
+}
+
+.courses{
+    grid-area: a;
+    max-width: fit-content;
+}
+
+.projects-development{
+    grid-area: b;
+    max-width: fit-content;
+}
+
+.studying{
+    grid-area: c;
+    max-width: fit-content;
 }
