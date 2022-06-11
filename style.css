@@ -116,17 +116,21 @@ p{
     height: 30rem;
     background-color: var(--white);
     border-radius: 15rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .profile-personal-info{
     grid-area: c;
+    justify-content: space-around;
     height: fit-content;
     overflow: hidden;
     max-width: fit-content;
     margin-left: 0 auto;
     
+}
+
+
+.profile-personal-info > *{
+    margin: 0.5rem;
 }
 
 .profile-description{
