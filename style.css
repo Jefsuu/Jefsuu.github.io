@@ -125,7 +125,7 @@ p{
 }
 
 .profile-description{
-    
+    margin-top: auto;
     height: 90vh;
     max-width: fit-content;
     height: fit-content;
@@ -152,6 +152,7 @@ p{
     height: max-content;
     margin: 3rem;
     border-radius: 2rem;
+    padding: .5rem;
 }
 
 .project-description:hover{
@@ -196,20 +197,54 @@ p{
 
 .studies-section{
     display: grid;
-    grid-template-areas: "a b c";
+    grid-template-areas: "a a c";
 }
 
 .courses{
     grid-area: a;
     max-width: fit-content;
-}
-
-.projects-development{
-    grid-area: b;
-    max-width: fit-content;
+    margin-left: 10rem;
 }
 
 .studying{
     grid-area: c;
     max-width: fit-content;
+    margin-right: 10rem;
+}
+
+.projects-development{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.project-wip{
+    background-color: var(--light-gray-color);
+    height: max-content;
+    margin: 3rem;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.project-wip > *{
+    margin-left: 2rem;
+}
+
+.project-wip .title{
+    text-align: center;
+}
+
+.project-wip .objective{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.project-wip .desc p{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.project-wip .desc ul{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
 }
