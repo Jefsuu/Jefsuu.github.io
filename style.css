@@ -18,7 +18,7 @@ html{
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: var(--primary-color);
     line-height: 1.5;
     
@@ -99,16 +99,11 @@ p{
     height: 85vh;
 }
 .profile{
-    display: grid;
-    grid-template-areas: 
-    "a b b" 
-    "a b b" 
-    "c b b";
+    display: flex;
 }
 
 .profile-photo{
-    grid-area: a;
-    height: fit-content;
+    max-width: fit-content;
 
 }
 .photo{
@@ -116,29 +111,35 @@ p{
     height: 30rem;
     background-color: var(--white);
     border-radius: 15rem;
+    margin-left: 2rem;
 }
 
 .profile-personal-info{
-    grid-area: c;
-    justify-content: space-around;
-    height: fit-content;
-    overflow: hidden;
-    max-width: fit-content;
-    margin-left: 0 auto;
-    
+    width: 55rem;
 }
-
-
 .profile-personal-info > *{
-    margin: 0.5rem;
+    margin: 1rem;
+}
+.profile-personal-info h5{
+    margin-left: 2rem;
 }
 
 .profile-description{
-    grid-area: b;
+    
     height: 90vh;
-    background-color: rebeccapurple;
     max-width: fit-content;
     height: fit-content;
+    text-align: justify;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.profile-description p{
+    margin: 1rem;
+}
+
+.interest ul{
+    margin-left: 5rem;
 }
 
 .content-projects{
@@ -178,7 +179,6 @@ p{
 }
 
 .project-description .tech {
-    font-size: medium;
     margin: 1rem;
     margin-left: 4rem;
 }
